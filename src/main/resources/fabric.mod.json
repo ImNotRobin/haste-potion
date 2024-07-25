@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "haste-potion",
+	"version": "${version}",
+	"name": "Haste Potion",
+	"description": "Adds in a haste potion brewed using amethyst shards into swiftness potions\nUse Polytone to get the custom potion color",
+	"authors": [
+		"imnotrobin"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/haste-potion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.robin.hastepotion.HastePotion"
+		]
+	},
+	"mixins": [
+		"haste-potion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "Polytone"
+	}
+}
